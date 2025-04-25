@@ -1,0 +1,10 @@
+pub mod api;
+pub mod adapters;
+pub mod config;
+pub mod core;
+pub mod common;
+
+// Optionally expose prelude
+pub mod prelude {
+    pub use crate::core::*;
+}

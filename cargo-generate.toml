@@ -1,0 +1,12 @@
+[template]
+template = "template"
+# Optional: Author (uses your Git config)
+author = "{{git_user_name}} <{{git_user_email}}> @ {{date}}"
+# Description
+description = "Hexagonal architecture scaffold in Rust"
+# License
+license = "MIT OR Apache-2.0"
+
+
+[placeholders]
+project-name = { description = "Name of the new Rust project" }

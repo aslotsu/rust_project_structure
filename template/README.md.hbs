@@ -1,0 +1,32 @@
+# {{project-name}}
+
+{{description}}
+
+## Project Layout
+
+```text
+.
+├── Cargo.toml
+├── design/
+├── examples/
+├── src/
+│   ├── main.rs                  # Application entry point
+│   ├── lib.rs                   # Library exports
+│   ├── api/                     # API definitions
+│   │   ├── protobuf/
+│   │   └── rest/
+│   ├── adapters/                # Implementations of ports
+│   │   ├── inbound/             # External → Core
+│   │   └── outbound/            # Core → External
+│   ├── config/                  # Configuration
+│   ├── core/                    # Business domain
+│   │   ├── domain/              # Domain models
+│   │   ├── ports/               # Interface definitions
+│   │   │   ├── inbound/
+│   │   │   └── outbound/
+│   │   └── services/            # Business logic
+│   ├── common/                  # Shared utilities
+│   └── tests/                   # Test suites
+│       ├── e2e/
+│       └── integration/
+└── benches/                     # Benchmarks (optional)

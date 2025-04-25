@@ -9,4 +9,4 @@ license = "MIT OR Apache-2.0"
 
 
 [placeholders]
-project-name = { description = "Name of the new Rust project" }
+service = { description = "Name of the new Rust project" }
